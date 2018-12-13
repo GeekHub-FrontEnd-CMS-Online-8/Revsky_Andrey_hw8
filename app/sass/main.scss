@@ -359,4 +359,51 @@ body {
     font-size: 22px;
     color: #777777;
   }
+
+  .block {
+    margin: 100px 0;
+    .team_list {
+      display: flex;
+      justify-content: space-around;
+      .team_item {
+        width: 250px;
+        height: 350px;
+        .team_photo {
+          width: 230px;
+          height: 230px;
+          border: 10px solid #fff;
+          border-radius: 50%;
+          overflow: hidden;
+        }
+        .team_name {
+          margin: 15px 0;
+          font-size: 18px;
+          font-weight: bold;
+        }
+        .team_position {
+          margin-bottom: 10px;
+          font-size: 16px;
+        }
+        .team_social_list li {
+          display: inline;
+          margin: 7px;
+          font-size: 18px;
+
+          a {
+            width: 35px;
+            height: 35px;
+            border: 5px solid #fff;
+            border-radius: 50%;
+            line-height: 35px;
+          }
+        }
+      }
+
+    }
+    .team_text {
+      width: 600px;
+      margin: 0 auto;
+      border: 2px solid red;
+    }
+  }
 }
