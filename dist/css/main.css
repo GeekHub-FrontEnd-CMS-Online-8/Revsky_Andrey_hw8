@@ -1,0 +1,372 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url("../../app/font/BrandonGrotesque-MediumItalic.eot");
+  src: local("Brandon Grotesque Medium Italic"), local("BrandonGrotesque-MediumItalic"), url("../../app/font/BrandonGrotesque-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../../app/font/BrandonGrotesque-MediumItalic.woff") format("woff"), url("../../app/font/BrandonGrotesque-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url("../../app/font/BrandonGrotesque-Bold.eot");
+  src: local("Brandon Grotesque Bold"), local("BrandonGrotesque-Bold"), url("../../app/font/BrandonGrotesque-Bold.eot?#iefix") format("embedded-opentype"), url("../../app/font/BrandonGrotesque-Bold.woff") format("woff"), url("../../app/font/BrandonGrotesque-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url("../../app/font/BrandonGrotesque-Light.eot");
+  src: local("Brandon Grotesque Light"), local("BrandonGrotesque-Light"), url("../../app/font/BrandonGrotesque-Light.eot?#iefix") format("embedded-opentype"), url("../../app/font/BrandonGrotesque-Light.woff") format("woff"), url("../../app/font/BrandonGrotesque-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url("../../app/font/BrandonGrotesque-Black.eot");
+  src: local("Brandon Grotesque Black"), local("BrandonGrotesque-Black"), url("../../app/font/BrandonGrotesque-Black.eot?#iefix") format("embedded-opentype"), url("../../app/font/BrandonGrotesque-Black.woff") format("woff"), url("../../app/font/BrandonGrotesque-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url("../../app/font/BrandonGrotesque-Medium.eot");
+  src: local("Brandon Grotesque Medium"), local("BrandonGrotesque-Medium"), url("../../app/font/BrandonGrotesque-Medium.eot?#iefix") format("embedded-opentype"), url("../../app/font/BrandonGrotesque-Medium.woff") format("woff"), url("../../app/font/BrandonGrotesque-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url("../../app/font/BrandonGrotesque-ThinItalic.eot");
+  src: local("Brandon Grotesque Thin Italic"), local("BrandonGrotesque-ThinItalic"), url("../../app/font/BrandonGrotesque-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../../app/font/BrandonGrotesque-ThinItalic.woff") format("woff"), url("../../app/font/BrandonGrotesque-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url("../../app/font/BrandonGrotesque-Thin.eot");
+  src: local("Brandon Grotesque Thin"), local("BrandonGrotesque-Thin"), url("../../app/font/BrandonGrotesque-Thin.eot?#iefix") format("embedded-opentype"), url("../../app/font/BrandonGrotesque-Thin.woff") format("woff"), url("../../app/font/BrandonGrotesque-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url("../../app/font/BrandonGrotesque-LightItalic.eot");
+  src: local("Brandon Grotesque Light Italic"), local("BrandonGrotesque-LightItalic"), url("../../app/font/BrandonGrotesque-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../app/font/BrandonGrotesque-LightItalic.woff") format("woff"), url("../../app/font/BrandonGrotesque-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url("../../app/font/BrandonGrotesque-Regular.eot");
+  src: local("Brandon Grotesque Regular"), local("BrandonGrotesque-Regular"), url("../../app/font/BrandonGrotesque-Regular.eot?#iefix") format("embedded-opentype"), url("../../app/font/BrandonGrotesque-Regular.woff") format("woff"), url("../../app/font/BrandonGrotesque-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url("../../app/font/BrandonGrotesque-RegularItalic.eot");
+  src: local("Brandon Grotesque Regular Italic"), local("BrandonGrotesque-RegularItalic"), url("../../app/font/BrandonGrotesque-RegularItalic.eot?#iefix") format("embedded-opentype"), url("../../app/font/BrandonGrotesque-RegularItalic.woff") format("woff"), url("../../app/font/BrandonGrotesque-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url("../../app/font/BrandonGrotesque-BoldItalic.eot");
+  src: local("Brandon Grotesque Bold Italic"), local("BrandonGrotesque-BoldItalic"), url("../../app/font/BrandonGrotesque-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../app/font/BrandonGrotesque-BoldItalic.woff") format("woff"), url("../../app/font/BrandonGrotesque-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url("../../app/font/BrandonGrotesque-BlackItalic.eot");
+  src: local("Brandon Grotesque Black Italic"), local("BrandonGrotesque-BlackItalic"), url("../../app/font/BrandonGrotesque-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../../app/font/BrandonGrotesque-BlackItalic.woff") format("woff"), url("../../app/font/BrandonGrotesque-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic; }
+
+html, body {
+  scroll-behavior: smooth; }
+
+a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid transparent; }
+
+body {
+  font-family: "Brandon Grotesque Light", sans-serif;
+  text-align: center; }
+
+.wrap {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto; }
+
+.iner {
+  width: 900px;
+  margin: 0 auto; }
+
+.welcome {
+  height: 620px;
+  background: #1d1833 url(../img/bg-welcome.png) center center no-repeat;
+  background-size: cover;
+  color: #fff; }
+  .welcome .header {
+    padding-top: 50px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between; }
+    .welcome .header .logo {
+      width: 140px;
+      height: 29px;
+      overflow: hidden; }
+      .welcome .header .logo:hover {
+        transition: 0.5s;
+        transform: scale(1.15, 1.15); }
+    .welcome .header .main-menu-list li {
+      display: inline; }
+      .welcome .header .main-menu-list li a {
+        padding: 5px 20px; }
+        .welcome .header .main-menu-list li a:hover {
+          transition: 1s;
+          border-radius: 15px;
+          background: white;
+          color: #a9a9a9; }
+  .welcome .block {
+    margin: 200px auto 0;
+    width: 700px;
+    height: 280px; }
+    .welcome .block_text {
+      font: "Brandon Grotesque Light", sans-serif;
+      font-size: 32px; }
+    .welcome .block_title {
+      font: "Brandon Grotesque Bold", sans-serif;
+      font-size: 66px;
+      margin: 40px 0 70px 0; }
+    .welcome .block_button {
+      font-size: 23px;
+      font-weight: bold;
+      padding: 25px 70px;
+      border: 2px solid #fff; }
+      .welcome .block_button:hover {
+        transition: 1s;
+        border-radius: 25px;
+        transform: scale(1.1, 1.1);
+        color: #a9a9a9;
+        background: #fff; }
+
+.bg_color {
+  background: #fafafa; }
+
+.services {
+  text-align: left; }
+  .services h2 {
+    font: "Brandon Grotesque Light", sans-serif;
+    font-size: 66px; }
+    .services h2 span {
+      font-weight: bold; }
+  .services .block_flex {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .services .block_flex .services_text {
+      margin-top: 35px;
+      color: #9b9b9b; }
+    .services .block_flex .right {
+      margin-right: 50px; }
+    .services .block_flex .left {
+      margin-left: 50px; }
+  .services .block_flex_list {
+    margin: 100px auto 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between; }
+    .services .block_flex_list .block_flex_item {
+      margin: 25px auto 15px;
+      display: flex;
+      width: 400px; }
+      .services .block_flex_list .block_flex_item img {
+        height: 70px;
+        width: 70px; }
+      .services .block_flex_list .block_flex_item .conteiner {
+        margin-left: 20px;
+        width: 320px; }
+        .services .block_flex_list .block_flex_item .conteiner h4 {
+          font-size: 22px; }
+        .services .block_flex_list .block_flex_item .conteiner p {
+          padding-top: 10px;
+          color: #9b9b9b;
+          font-size: 16px;
+          line-height: 20px; }
+
+.awesome {
+  padding: 100px 0; }
+  .awesome h2 {
+    font: "Brandon Grotesque Light", sans-serif;
+    font-size: 66px; }
+    .awesome h2 span {
+      font-weight: bold; }
+  .awesome .subtitle {
+    font-size: 22px;
+    color: #777777; }
+  .awesome .clients_left {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; }
+    .awesome .clients_left .right {
+      margin-right: 50px; }
+    .awesome .clients_left img {
+      width: 220px;
+      height: 220px;
+      border: 8px solid #ffffff;
+      border-radius: 50%;
+      overflow: hidden;
+      background: black; }
+    .awesome .clients_left blockquote {
+      height: 175px;
+      width: 610px;
+      background: #fff;
+      border: 2px solid #ededed; }
+      .awesome .clients_left blockquote p {
+        width: 500px;
+        margin: 40px auto 20px;
+        font-size: 26px;
+        color: #777777; }
+      .awesome .clients_left blockquote cite {
+        color: #7690c5; }
+    .awesome .clients_left .arrow_left {
+      position: relative;
+      background: #fff;
+      border: 2px solid #f3f3f3; }
+    .awesome .clients_left .arrow_left:after, .awesome .clients_left .arrow_left:before {
+      right: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none; }
+    .awesome .clients_left .arrow_left:after {
+      border-color: rgba(255, 255, 255, 0);
+      border-right-color: #fff;
+      border-width: 19px;
+      margin-top: -19px; }
+    .awesome .clients_left .arrow_left:before {
+      border-color: rgba(243, 243, 243, 0);
+      border-right-color: #f3f3f3;
+      border-width: 22px;
+      margin-top: -22px; }
+  .awesome .clients_right {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; }
+    .awesome .clients_right .left {
+      margin-left: 50px; }
+    .awesome .clients_right img {
+      width: 220px;
+      height: 220px;
+      border: 8px solid #ffffff;
+      border-radius: 50%;
+      overflow: hidden;
+      background: black;
+      order: 2; }
+    .awesome .clients_right blockquote {
+      height: 175px;
+      width: 610px;
+      background: #fff;
+      border: 2px solid #ededed; }
+      .awesome .clients_right blockquote p {
+        width: 500px;
+        margin: 40px auto 20px;
+        font-size: 26px;
+        color: #777777;
+        order: 1; }
+      .awesome .clients_right blockquote cite {
+        color: #7690c5; }
+    .awesome .clients_right .arrow_right {
+      position: relative;
+      background: #fff;
+      border: 2px solid #f3f3f3; }
+    .awesome .clients_right .arrow_right:after, .awesome .clients_right .arrow_right:before {
+      left: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none; }
+    .awesome .clients_right .arrow_right:after {
+      border-color: rgba(255, 255, 255, 0);
+      border-left-color: #fff;
+      border-width: 19px;
+      margin-top: -19px; }
+    .awesome .clients_right .arrow_right:before {
+      border-color: rgba(243, 243, 243, 0);
+      border-left-color: #f3f3f3;
+      border-width: 22px;
+      margin-top: -22px; }
+
+.logos {
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between; }
+
+.team {
+  padding: 100px 0;
+  background: #000;
+  color: #ffff; }
+  .team h2 {
+    font: "Brandon Grotesque Light", sans-serif;
+    font-size: 66px; }
+    .team h2 span {
+      font-weight: bold; }
+  .team .subtitle {
+    font-size: 22px;
+    color: #777777; }
