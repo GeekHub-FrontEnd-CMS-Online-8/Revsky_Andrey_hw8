@@ -27,7 +27,7 @@ body {
 }
 
 .iner {
-  width: 900px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -395,15 +395,86 @@ body {
             border: 5px solid #fff;
             border-radius: 50%;
             line-height: 35px;
+            &:hover {
+              transition: 0.75s;
+              color: #000;
+              background: #87a0d2;
+
+            }
           }
         }
       }
 
     }
-    .team_text {
-      width: 600px;
-      margin: 0 auto;
-      border: 2px solid red;
+
     }
+  .team_text {
+    width: 650px;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+}
+
+.contact_us {
+  padding: 100px 0 100px;
+  background: #7690c5;
+  color: #fff;
+  text-align: left;
+  font-size: 18px;
+
+  h2 {
+    font: $font-light;
+    font-size: 66px;
+
+    span {
+      font-weight: bold
+    }
+  }
+
+  .block_flex {
+    display: flex;
+    justify-content: space-around;
+
+    .block {
+      width: 420px;
+      margin-right: 65px;
+      font-size: 18px;
+    }
+
+    contact_us_list {
+      border: 1px solid red;
+      margin-top: 50px;
+
+    }
+
+    .contact_us_form {
+      width: 470px;
+      display: block;
+
+      &_item {
+        width: 450px;
+        height: 55px;
+        margin-bottom: 25px;
+        padding-left: 25px;
+        border-radius: 5px;
+        font-size: 18px;
+      }
+
+      &_message {
+        width: 450px;
+        height: 210px;
+        padding-left: 25px;
+        padding-top: 10px;
+        border-radius: 5px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .copyright {
+    margin-top: 100px;
+    padding-top: 30px;
+    border-top: 1px solid #87a0d2;
+    text-align: center;
   }
 }
